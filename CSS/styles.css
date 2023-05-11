@@ -1,0 +1,126 @@
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 300px;
+  background: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  padding: 25px 25px 15px 25px;
+  margin-bottom: 5px;
+}
+
+.card__header {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.card__header img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+  transition: 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.overlay .view_icon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+.card__body h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.card__body p {
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.status--grid {
+  display: flex;
+}
+
+.item--1 {
+  flex-grow: 1;
+}
+
+.item--2 {
+  flex-grow: 10;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.item--3 {
+  flex-grow: 1;
+}
+
+.item--3 img {
+  width: 20px;
+  height: 20px;
+}
+
+.divider {
+  margin-top: 15px;
+  border: 1px solid hsl(215, 32%, 27%);
+  margin-bottom: 10px;
+}
+
+.creater {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  align-items: center;
+}
+
+.creater img {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid hsl(0, 0%, 100%);
+  border-radius: 23px;
+}
+
+.author_name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.card__body h1:hover,
+.author_name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
